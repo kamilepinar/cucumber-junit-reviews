@@ -32,4 +32,20 @@ loginPage.btn_log_in.click();
 
 
 
+
+
+    @When("the user enters username {string}")
+    public void the_user_enter_username_with_param(String username) {
+        loginPage.txt_username.sendKeys(ConfigurationReader.getProperty("seamless.username"));
+    }
+    @When("the user enters password {string}")
+    public void the_user_enter_password_with_param(String password) {
+        loginPage.txt_password.sendKeys(ConfigurationReader.getProperty("seamless.password"));
+    }
+
+
+
+
+
+
 }
