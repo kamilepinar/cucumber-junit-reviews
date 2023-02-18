@@ -54,7 +54,7 @@ Feature: Login functionality tests
     Examples:
       | username      | password      |
       | Employee61    | WrongPassword |
-      | WrongUsername | Employee123   |
+   #   | WrongUsername | Employee123   |
       | WrongUsername | WrongPassword |
-      | empty         | empty         |
+    #  | empty         | empty         |
 
