@@ -30,17 +30,31 @@ loginPage.btn_log_in.click();
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Files"));
     }
 
+    @Then("the user should not be able to log in")
+    public void the_user_should_not_be_able_to_log_in() {
+       Assert.assertEquals("Seamlessly",Driver.getDriver().getTitle());
+    }
+
 
 
 
 
     @When("the user enters username {string}")
     public void the_user_enter_username_with_param(String username) {
-        loginPage.txt_username.sendKeys(ConfigurationReader.getProperty("seamless.username"));
+        if (username.equals("empty")){
+            loginPage.txt_username.sendKeys("");
+        }else {
+            loginPage.txt_username.sendKeys(username);
+        }
+
     }
     @When("the user enters password {string}")
     public void the_user_enter_password_with_param(String password) {
-        loginPage.txt_password.sendKeys(ConfigurationReader.getProperty("seamless.password"));
+        if (password.equals("empty")){
+            loginPage.txt_password.sendKeys("");
+        }else {
+            loginPage.txt_password.sendKeys(password);
+        }
     }
 
 
