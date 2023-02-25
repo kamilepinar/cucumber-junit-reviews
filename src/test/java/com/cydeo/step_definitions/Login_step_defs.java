@@ -27,7 +27,7 @@ loginPage.btn_log_in.click();
     }
     @Then("the user should be able to log in")
     public void the_user_should_be_able_to_log_in() {
-        Assert.assertTrue(Driver.getDriver().getTitle().contains("Files"));
+        Assert.assertTrue(Driver.getDriver().getTitle().contains("Files1"));
     }
 
     @Then("the user should not be able to log in")

@@ -1,6 +1,6 @@
 Feature: Login functionality tests
 
-  @validLogin
+  @validLogin  @failed @wip
   Scenario: Login with valid credential
     Given the user is on the log in page
     When the user enter valid username
@@ -9,7 +9,7 @@ Feature: Login functionality tests
     Then the user should be able to log in
 
 
-  @validLoginWithParams
+  @validLoginWithParams @wip
   Scenario: Login with valid credential
     Given the user is on the log in page
     When the user enters username "Employee61"

@@ -46,6 +46,12 @@
             <version>7.3.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>me.jvt.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>7.3.0</version>
+        </dependency>
+
 
     </dependencies>
 
@@ -63,7 +69,8 @@
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <!--    <testFailureIgnore>true</testFailureIgnore> -->
                     <includes>
-                        <include>**/*CukesRunner*.java</include>
+                       <include>**/*CukesRunner*.java</include>
+                      <!--  <include>**/*FailedTestRunner*.java</include> -->
                     </includes>
                 </configuration>
             </plugin>

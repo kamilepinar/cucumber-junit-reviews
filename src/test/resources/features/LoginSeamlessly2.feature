@@ -1,6 +1,6 @@
 Feature: Login functionality tests
 
-  @validLogin
+  @validLogin   @failed @wip @runWithTerminal
   Scenario: Login with valid credential
     Given the user is on the log in page
     When the user enter valid username
